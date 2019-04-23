@@ -43,12 +43,12 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $(".navbar").css("padding", "10px");
-        //document.getElementById("navbar").style.padding = "10px";
+        document.getElementById("logo").style.width = "75px";
         document.getElementById("nav-brand").style.fontSize = "1.2rem";
         document.getElementById("navbar-navv").style.fontSize = "1em";
     } else {
         $(".navbar").css("padding", "30px");
-        //document.getElementById("navbar").style.padding = "30px";
+        document.getElementById("logo").style.width = "100px";
         document.getElementById("nav-brand").style.fontSize = "1.8rem";
         document.getElementById("navbar-navv").style.fontSize = "1.2em";
 
