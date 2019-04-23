@@ -29,6 +29,11 @@ h1, h2{
     color: #45b29a!important;
 }
 
+#logo{
+    width: 100px;
+    margin-left: 15px;
+}
+
 .navbar-nav{
     font-size: 1.2em;
     transition: 0.4s;
@@ -59,24 +64,37 @@ h1, h2{
 /*-------------------------------------------------------HERO IMG-----------------------------------------------------*/
 .bgimage {
     width:100%;
-    height:650px;
-    background: url('../images/hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    margin-top:112px;
+    height:200px;
+    /*background: url('../images/desktopphoneLOGO.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size:auto;*/
+    margin: 100px 0;
+
 }
 
 .hero-text {
-    color:white;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
-.hero-text>h1{
-    color:white!important;
+
+/*.hero-text>h1 {*/
+    /*color:white!important;*/
+/*}*/
+
+.work-text {
+    text-align: center;
+    top: 50%;
+    margin: 0 auto;
+}
+
+
+#work{
+  width: 500px;
 }
 
 /*-------------------------------------------------------INTRO-----------------------------------------------------*/
@@ -84,7 +102,7 @@ h1, h2{
 .img-thumbnail{
     border-radius: 50%;
     height:200px;
-    background-color: #e0ebe8;
+    background-color: #d4c1dd;
     margin:15px;
 }
 
@@ -114,7 +132,7 @@ h1, h2{
 #carouselExampleFade{
     background-color: #b1b1b1;
     color:white;
-    padding: 100px;
+    padding: 50px;
 
 }
 
@@ -123,7 +141,7 @@ h1, h2{
 }
 
 .carousel-inner{
-    height: 150px;
+    height: 200px;
 }
 
 .carousel-control-next{
