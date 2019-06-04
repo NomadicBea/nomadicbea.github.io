@@ -6,7 +6,7 @@ $(function(){
     $("#nav-placeholder").load("nav.html");
 
 
-    $('#action1, #action2, #action3, #action4, #action5, #action6').click(function () {
+    $('#action1, #action2, #action3, #action4, #action5, #action6, #action7').click(function () {
         if (this.id == 'action1') {
             var div1 = $('#showOrHideDiv1');
             div1.fadeToggle(500);
@@ -31,11 +31,22 @@ $(function(){
             var div4 = $('#showOrHideDiv6');
             div4.fadeToggle(500);
         }
+        else if (this.id == 'action7') {
+            var div7 = $('#showOrHideDiv7');
+            div7.fadeToggle(500);
+        }
     });
+
+
+    $('.portfolio-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
 });
-
-
-
 
 //shrinking navbar
 window.onscroll = function() {scrollFunction()};
@@ -53,5 +64,15 @@ function scrollFunction() {
         document.getElementById("navbar-navv").style.fontSize = "1.2em";
 
     }
+}
+
+function scrollIndicator() {
+    var winScroll = document.body.scrollTop || document.getElementById('pf-img').scrollTop;
+    console.log(winScroll);
+    var height = document.getElementById('pf-img').scrollHeight - document.getElementById('pf-img').clientHeight;
+    console.log(height);
+    var scrolled = (winScroll / height) * 100;
+    console.log(scrolled);
+    document.getElementById("myBar").style.width = scrolled + "%";
 }
 
