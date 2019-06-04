@@ -93,8 +93,9 @@ h1, h2{
 }
 
 
-#work{
+.work{
   width: 500px;
+  margin: 0 auto;
 }
 
 /*-------------------------------------------------------INTRO-----------------------------------------------------*/
@@ -132,27 +133,131 @@ h1, h2{
 #carouselExampleFade{
     background-color: #b1b1b1;
     color:white;
-    padding: 50px;
+    padding: 60px 0;
 
 }
 
-.carousel-item>h1{
+#carouselExampleFade .slick-prev {
+    left: 0px;
+}
+
+.portfolio-wrapper>h1{
     color: white;
 }
 
-.carousel-inner{
-    height: 200px;
-}
 
-.carousel-control-next{
-    right:10px;
-}
-.carousel-control-prev{
-    left:10px;
+/*-------------------------------------------------------Portfolio-----------------------------------------------------*/
+
+
+.slick-prev:before, .slick-next:before{
+    color: #d5c1dd!important;
+    font-size: 50px;
 }
 
 
-/*-------------------------------------------------------RESUME-----------------------------------------------------*/
+.slick-next{
+    right: 28px;
+}
+
+.portfolio-wrapper {
+    text-align: center;
+    top: 50%;
+    margin: 0 auto;
+    width:80%;
+}
+
+
+.portfolio-item{
+    width: 500px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------Page-----------------------------------------------------*/
+.portfolio-pg{
+    background-color: rgba(224, 235, 232, .5);
+    margin-bottom: 200px;
+
+}
+
+.portfolio-area{
+    position: relative;
+    margin-top: 80px;
+    background-color:white;
+    width: 100%;
+    height:500px;
+}
+
+.portfolio-area-tile{
+    position: relative;
+    margin-top: 80px;
+    background-color:white;
+    width: 100%;
+}
+
+.pf-img{
+    max-height:100%;
+    overflow:auto;
+}
+
+.PFMain{
+    width: 100%;
+    height: auto;
+    margin: 5% auto;
+}
+
+.headerTxt{
+    font-size: 6.5em;
+    margin-left: 25px;
+    margin-bottom: -130px;
+    margin-top: 180px;
+    color: white;
+    font-weight: 600;
+}
+
+.long-text{
+    font-size: 4.5em!important;
+    margin-bottom: -120px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: white;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #d5c1dd;
+    width: 0%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.scroll-container{
+    margin-left: -15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+.row-50{
+    height:50%;
+}
+
+.grid-img{
+    height: -webkit-fill-available;
+}
+
+.fixed-height{
+    height: 500px;
+    margin: 0 auto;
+}
+    /*-------------------------------------------------------RESUME-----------------------------------------------------*/
 
 .action{
     cursor: pointer;
@@ -197,6 +302,7 @@ h1, h2{
 }
 
 
+
 /*--------------------------------------------------RESPONSIVE WEB-----------------------------------------------------*/
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -231,6 +337,28 @@ h1, h2{
 
     .carousel-inner{
         height: 250px;
+    }
+
+    .portfolio-wrapper{
+        width: 90%;
+    }
+
+    .portfolio-item{
+        height: 50vw;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .fixed-height {
+        height: 50vw;
+        margin: 0 auto;
+    }
+
+    .headerTxt, .long-text {
+        font-size: 2.5em!important;
+        margin-bottom: -105px;
+        margin-top: 250px;
+        margin-left: initial;
     }
 
 
